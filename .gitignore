@@ -1,4 +1,4 @@
 /node_modules/
 /public/build/
-
+s3.js
 .DS_Store

@@ -1,6 +1,6 @@
 <script>
 	export let name;
-	let src = '/favicon.png';
+	let src = 'https://cyclic-busy-tunic-boa-eu-north-1.s3.eu-north-1.amazonaws.com/public/favicon.png';
 </script>
 
 <main>
