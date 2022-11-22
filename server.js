@@ -20,5 +20,5 @@ app.use(express.static('public', options))
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
-  console.log(`Portfolio app listening at http://localhost:${port}`)
+  console.log(`Portfolio app listening at http://localhost:${port} - ${process.env.API_USER_NAME}`)
 })
