@@ -2,6 +2,7 @@
 const express = require('express')
 const path = require("path");
 const app = express()
+require('dotenv').config()
 
 // #############################################################################
 // This configures static hosting for files in /public that have the extensions
@@ -16,7 +17,7 @@ var options = {
 }
 app.use(express.static('public', options))
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 app.listen(port, () => {
   console.log(`Svelte app listening at http://localhost:${port}`)
