@@ -20,12 +20,13 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "cyclic-dynamodb": "0.0.21",
     "aws-sdk": "^2.1258.0",
     "axios": "^1.1.3",
     "cors": "^2.8.5",
-    "cyclic-dynamodb": "^0.0.21",
     "dotenv": "^16.0.3",
-    "express": "^4.17.3",
+    "express": "^4.18.1",
+    "env-cmd": "^10.1.0",
     "sirv-cli": "^2.0.0"
   }
 }

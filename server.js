@@ -29,19 +29,19 @@ app.get('/api/:col', async (req, res) => {
     const CyclicDb = require('cyclic-dynamodb')
     const db = CyclicDb("busy-tunic-boaCyclicDB")
     const col = req.params.col
-    console.log(`list collection: ${col} with params: ${JSON.stringify(req.params)}`)
-    const items = await db.collection(col).list()
-    console.log(JSON.stringify(items, null, 2))
+    console.log(db)
+   // const items = await db.collection(col).list()
+    //console.log(JSON.stringify(items, null, 2))
 
     //
-    const run = async function(){
-        let portfolio = db.collection(col)
+    // const run = async function(){
+    //     let portfolio = db.collection(col)
 
-        // create an item in collection with key "leo"
-        let list = await portfolio.list()
-        console.log(list)
-    }
-    run()
+    //     // create an item in collection with key "leo"
+    //     let list = await portfolio.list()
+    //     console.log(list)
+    // }
+    // run()
     //
     res.json({}).end()
   })();
